@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiki-like Page</title>
+    <title>Wiki-like Page with Table</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +17,22 @@
             padding: 10px 0;
             text-align: center;
             font-size: 24px;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-buttons a {
+            color: #005b96;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            margin: 0 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .nav-buttons a:hover {
+            background-color: #e0e0e0;
         }
         .container {
             display: flex;
@@ -58,12 +74,39 @@
             font-size: 16px;
             line-height: 1.6;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #005b96;
+            color: white;
+        }
+        td img {
+            max-width: 100px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <header>
         My Wiki Page
     </header>
+
+    <div class="nav-buttons">
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+        <a href="#section4">Section 4</a>
+    </div>
 
     <div class="container">
         <div class="sidebar">
@@ -75,19 +118,44 @@
 
         <div class="content">
             <h1>Welcome to My Wiki-like Page</h1>
-            <p>This is a simple page layout styled to resemble a wiki. You can add multiple sections and links to navigate between them.</p>
+            <p>This page features a table with information about different entries, such as their name, image, and a fish value.</p>
 
-            <h2 id="section1">Section 1: Introduction</h2>
-            <p>This is the first section. Add any introductory text here, explaining what this wiki page is about.</p>
+            <h2 id="section1">Section 1: Table of Entries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Fish</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td><img src="https://via.placeholder.com/100" alt="Item 1 Image"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td><img src="https://via.placeholder.com/100" alt="Item 2 Image"></td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Item 3</td>
+                        <td><img src="https://via.placeholder.com/100" alt="Item 3 Image"></td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <h2 id="section2">Section 2: History</h2>
-            <p>In this section, you can provide historical context or any background information related to your topic.</p>
+            <h2 id="section2">Section 2: More Information</h2>
+            <p>Here, you can add more detailed information or descriptions of your items or topic.</p>
 
             <h2 id="section3">Section 3: Key Facts</h2>
-            <p>This section can include important facts, figures, or data that are relevant to your subject matter.</p>
+            <p>This section contains important facts or data related to the topic of your wiki page.</p>
 
             <h2 id="section4">Section 4: Conclusion</h2>
-            <p>Wrap up your wiki page with a conclusion or any final thoughts about your topic.</p>
+            <p>Wrap up your wiki with a conclusion or final thoughts.</p>
         </div>
     </div>
 </body>
