@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki-like Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #005b96;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 20%;
+            padding: 20px;
+            background-color: white;
+            width: 80%;
+        }
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .content h2 {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        My Wiki Page
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+            <a href="#section4">Section 4</a>
+        </div>
+
+        <div class="content">
+            <h1>Welcome to My Wiki-like Page</h1>
+            <p>This is a simple page layout styled to resemble a wiki. You can add multiple sections and links to navigate between them.</p>
+
+            <h2 id="section1">Section 1: Introduction</h2>
+            <p>This is the first section. Add any introductory text here, explaining what this wiki page is about.</p>
+
+            <h2 id="section2">Section 2: History</h2>
+            <p>In this section, you can provide historical context or any background information related to your topic.</p>
+
+            <h2 id="section3">Section 3: Key Facts</h2>
+            <p>This section can include important facts, figures, or data that are relevant to your subject matter.</p>
+
+            <h2 id="section4">Section 4: Conclusion</h2>
+            <p>Wrap up your wiki page with a conclusion or any final thoughts about your topic.</p>
+        </div>
+    </div>
+</body>
+</html>
