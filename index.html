@@ -34,6 +34,38 @@
         .nav-buttons a:hover {
             background-color: #e0e0e0;
         }
+        .buster-brawler {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            background-color: white;
+            border: 2px solid #333;
+            padding: 15px;
+            width: 250px;
+            z-index: 1000;
+        }
+        .buster-brawler img {
+            width: 100%;
+            height: auto;
+        }
+        .buster-brawler h2 {
+            text-align: center;
+            color: darkred;
+        }
+        .buster-brawler table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .buster-brawler th, .buster-brawler td {
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: left;
+        }
+        .buster-brawler th {
+            background-color: #333;
+            color: white;
+        }
         .container {
             display: flex;
             margin-top: 20px;
@@ -100,6 +132,23 @@
     <header>
         My Wiki Page
     </header>
+
+    <div class="buster-brawler">
+        <h2>Buster Brawler</h2>
+        <img src="https://via.placeholder.com/200x150/FF0000/000000?text=Buster+Brawler" alt="Buster Brawler">
+        <table>
+            <tr><th>Cost</th><td>Unobtainable. 18$</td></tr>
+            <tr><th>Difficulty</th><td>N/A</td></tr>
+            <tr><th>Damage</th><td>20</td></tr>
+            <tr><th>Health</th><td>Current Players in Server * 1000 + 2000</td></tr>
+            <tr><th>Regular Speed</th><td>32</td></tr>
+            <tr><th>Sprinting Speed</th><td>46</td></tr>
+            <tr><th>Stamina</th><td>100</td></tr>
+            <tr><th>Stamina loss per sec</th><td>50</td></tr>
+            <tr><th>Stamina gain per sec</th><td>20</td></tr>
+            <tr><th>Theme</th><td>Chase Theme</td></tr>
+        </table>
+    </div>
 
     <div class="nav-buttons">
         <a href="#section1">Section 1</a>
